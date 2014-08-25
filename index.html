@@ -1,0 +1,31 @@
+<html>
+<head>
+	<title>Benz Lee</title>
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,800,300" rel="stylesheet" type="text/css">
+    <link href="css/core.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="dist/shine.min.js"></script>
+</head>
+<body>
+	<h1 id="benzlee">BenzLee</h1>
+	<h2 class="mail"><a href="mailto:benz@benzlee.com">benz@benzlee.com</a></h2>
+	<script type="text/javascript">
+
+	var config = new shinejs.Config({
+	  numSteps: 4,
+	  opacity: 0.3,
+	  shadowRGB: new shinejs.Color(10, 10, 10)
+	});
+
+	var shine = new Shine(document.getElementById('benzlee'), config);
+
+	function handleMouseMove(event) {
+        shine.light.position.x = event.clientX;
+        shine.light.position.y = event.clientY;
+        shine.draw();
+      }
+
+      window.addEventListener('mousemove', handleMouseMove, false);
+	</script>
+</body>
+</html>
