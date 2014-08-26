@@ -7,6 +7,13 @@ body {
 	overflow: hidden;
 }
 
+body.wife {
+	background: #e74c3c url(../img/wife.jpg) no-repeat center center;
+	-webkit-transition: all 1s ease-in, opacity 1s;
+	transition: all 1s ease-in, opacity 1s;
+}
+
+
 h1 {
 	position: absolute;
 	bottom: 10px;
@@ -1080,7 +1087,7 @@ h1 span {
 
 .step-3 .icons span.letter,
 .step-4 .icons span.letter {
-	color: #2c3e50;
+	color: #DCF577;
 	text-shadow: 5px 5px 0 #ca3121;
 }
 

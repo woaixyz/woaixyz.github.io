@@ -82,7 +82,9 @@
 	function shuffle( array ) {
 		$('#welcome-text').addClass('hide');
 		$('#welcome').addClass('hide');
-		
+		$('#letter').addClass('hide');
+		$('body').addClass('wife');
+
 		var currentIndex = array.length
 		, temporaryValue
 		, randomIndex
